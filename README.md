@@ -1,4 +1,4 @@
-# 🧠 GNN Trust Challenge: Liar Nodes
+# 🧠 GNN Challenge: Liar Nodes
 
 ## 🎯 The Problem
 
