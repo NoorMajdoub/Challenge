@@ -1,4 +1,4 @@
-# 🧠 GNN Trust Challenge: When Features Lie
+# 🧠 GNN Trust Challenge: Liar Nodes
 
 ## 🎯 The Problem
 
@@ -59,25 +59,15 @@ As most regular GNN training tasks, you will be given:
 
 ## 🛠️ Example Techniques
 
-Consider these approaches (but don't limit yourself!):
-
-1. **Ignore completely tricky nodes in training using the mask?**
-   - How can you down-weight corrupted nodes during aggregation?
-
-2. **Implement an aggregation formula that minimizes the importance of the node embedding in the decision?**
-   - Can you rely more on neighborhood consensus?
-
-3. **Use attention mechanisms to learn trust scores?**
-   - Let the model learn which neighbors to trust
-
-4. **Multi-hop aggregation?**
-   - Look beyond immediate neighbors for cleaner signals
+You can use the notebook in baseline as your starting point! It is a simple example solution  that I made!
+We want the GNN to  learn when to rely on a node’s own features versus its neighbors’ right ?. An example of a solution is a trainable gate mechanism that dynamically balances these two signals, adapting to potential feature corruption without modifying the fixed embeddings. The model is trained on the provided graph and features, then predicts on test data using the same adaptive trust logic.
+You can use the same GNN as your baseline model , same for the training loop , get creative with your aggregation mecanism!
 
 ---
 
 ## 🚫 Constraints
 
-### ❌ You CANNOT:
+### ❌ You CANNOT
 - Remove the noisy nodes based on the mask from the training data
 - Alter the embedding of the nodes
 - Use external data
@@ -99,17 +89,16 @@ Build a GNN that can navigate the noise and make accurate predictions by:
 2. **Learning when to trust** neighborhood aggregation
 3. **Balancing both sources** intelligently to maximize classification accuracy
 
-Good luck, and may the best aggregation strategy win! 🚀
+## Evaluation Metrics
+Your submissions will be evaluated on the test set using three metrics:
+
+1. **Accuracy** - Overall classification correctness
+2. **F1-Score (Macro)** - Balanced performance across all classes
+3. **Precision (Macro)** - Quality of positive predictions
+
+## 🏆 Winning Criteria
+The winner will be determined by the submission that achieves the best average rank across all three metrics.
+
+Good luck, and may the best aggregation strategy win! 
 
 ---
-
-## 📝 Summary
-
-| Component | Description | Trustworthy? |
-|-----------|-------------|--------------|
-| **Adjacency Matrix (A)** | Graph structure | ✓ YES |
-| **Node Embeddings (X)** | Feature vectors | ⚠️ PARTIALLY CORRUPTED |
-| **Mask** | Corruption indicator | ✓ YES (train only) |
-| **Your Task** | Balance trust between X and neighborhood | 🎯 |
-
-**Remember**: The graph doesn't lie, but the features might. Choose wisely how you listen! 👂🔍
