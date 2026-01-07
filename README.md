@@ -106,5 +106,6 @@ The winner will be determined by the submission that achieves the best average r
 
 Good luck, and may the best aggregation strategy win! 
 
-PS: the code used to create the challenge dataset is defined in challenge_data notebook , as a participants please ignore it.
 ---
+PS: the code used to create the challenge dataset is defined in challenge_data notebook , as a participants please ignore it.
+
