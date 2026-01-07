@@ -16,7 +16,7 @@ For most neural networks, classification tasks are made individually based on th
 
 In this challenge, the goal is to implement mechanisms that balance these two sources of information. Node features are manually corrupted, while graph connectivity encodes contextual relationships that may either reinforce or contradict a node's individual features.
 
-Participants must adapt GNN models—using techniques such as **neighborhood sampling** and **aggregation**—to learn when to trust the node embedding, when to trust the neighborhood, and how to effectively combine both in order to perform node classification on the given dataset.
+Participants must adapt GNN models using techniques such as **neighborhood sampling** and **aggregation** to learn when to trust the node embedding, when to trust the neighborhood, and how to effectively combine both in order to perform node classification on the given dataset.
 
 ### ⚠️ Critical Constraint
 
@@ -106,4 +106,5 @@ The winner will be determined by the submission that achieves the best average r
 
 Good luck, and may the best aggregation strategy win! 
 
+PS: the code used to create the challenge dataset is defined in challenge_data notebook , as a participants please ignore it.
 ---
