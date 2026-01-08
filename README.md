@@ -1,6 +1,6 @@
-# 🧠 GNN Challenge: Liar Nodes
+# ✨ GNN Challenge: Liar Nodes✨
 
-## 🎯 The Problem
+##  The Problem
 
 For most neural networks, classification tasks are made individually based on the embedding of each data point. Samples that belong to the same class tend to have similar embeddings and therefore lie close to each other in the embedding space.
 
@@ -11,6 +11,7 @@ For most neural networks, classification tasks are made individually based on th
 **This raises an important question: what should a model do when there is a contradiction between the information provided by a node's embedding and the information coming from its neighborhood?**
 
 ---
+![Alt text](Challenge Picture!.png)
 
 ## 🎮 Challenge Overview
 
@@ -18,7 +19,7 @@ In this challenge, the goal is to implement mechanisms that balance these two so
 
 Participants must adapt GNN models using techniques such as **neighborhood sampling** and **aggregation** to learn when to trust the node embedding, when to trust the neighborhood, and how to effectively combine both in order to perform node classification on the given dataset.
 
-### ⚠️ Critical Constraint
+###  Critical Constraint
 
 **The provided node embeddings are fixed and cannot be modified or recomputed**; participants must rely solely on graph-based aggregation and sampling strategies to resolve conflicting signals.
 
@@ -32,7 +33,7 @@ Participants must adapt GNN models using techniques such as **neighborhood sampl
 
 ---
 
-## 📊 What Data You Will Use
+##  What Data You Will Use
 
 As most regular GNN training tasks, you will be given:
 
@@ -57,7 +58,7 @@ As most regular GNN training tasks, you will be given:
 
 ---
 
-## 🛠️ Example Techniques
+##  Example Techniques
 
 You can use the notebook in baseline as your starting point! It is a simple example solution  that I made!
 We want the GNN to  learn when to rely on a node’s own features versus its neighbors’ right ?. An example of a solution is a trainable gate mechanism that dynamically balances these two signals, adapting to potential feature corruption without modifying the fixed embeddings. The model is trained on the provided graph and features, then predicts on test data using the same adaptive trust logic.
@@ -67,12 +68,12 @@ You can use the same GNN as your baseline model , same for the training loop , g
 
 ## 🚫 Constraints
 
-### ❌ You CANNOT
+###  You CANNOT
 - Remove the noisy nodes based on the mask from the training data
 - Alter the embedding of the nodes
 - Use external data
 
-### ✅ You CAN:
+###  You CAN:
 - Use the mask to guide your aggregation strategy
 - Implement creative neighborhood sampling
 - Design custom aggregation functions
@@ -81,7 +82,7 @@ You can use the same GNN as your baseline model , same for the training loop , g
 
 ---
 
-## 🎯 Your Mission
+##  Your Mission ✨✨
 
 Build a GNN that can navigate the noise and make accurate predictions by:
 
@@ -98,7 +99,7 @@ Your submissions will be evaluated on the test set using three metrics:
 
 ## 🏆 Winning Criteria
 The winner will be determined by the submission that achieves the best average rank across all three metrics.
-### 📝 Submission Process
+###  Submission Process
 1. Fork this repository
 2. Add your predictions: `submissions/submission_<username>.csv`
 3. Create Pull Request with title: `Submission: <username>`
