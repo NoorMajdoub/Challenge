@@ -11,7 +11,7 @@ For most neural networks, classification tasks are made individually based on th
 **This raises an important question: what should a model do when there is a contradiction between the information provided by a node's embedding and the information coming from its neighborhood?**
 
 ---
-![Alt text](Challenge Picture!.png)
+![Alt text](picture.png)
 
 ## 🎮 Challenge Overview
 
