@@ -1,31 +1,100 @@
+/* General Body */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
     padding: 20px;
+    min-height: 100vh;
 }
 
+/* Heading */
 h1 {
     text-align: center;
+    font-size: 3em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
 }
 
-table {
-    width: 50%;
-    margin: auto;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-
-th {
-    cursor: pointer;
-}
-
+/* Search Box */
 input#searchBox {
     display: block;
-    margin: 10px auto 20px auto;
-    padding: 8px;
+    margin: 0 auto 30px auto;
+    padding: 12px 20px;
     width: 50%;
+    border-radius: 30px;
+    border: none;
+    font-size: 1em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+input#searchBox:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Table Styling */
+table {
+    width: 60%;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+table:hover {
+    transform: scale(1.01);
+}
+
+/* Table Headers */
+th {
+    padding: 15px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+th:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+}
+
+/* Table Cells */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+/* Zebra Rows */
+tbody tr:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background: #fff;
+}
+
+/* Row Hover Effect */
+tbody tr:hover {
+    background: #dcdcff;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+    table, input#searchBox {
+        width: 90%;
+    }
 }
