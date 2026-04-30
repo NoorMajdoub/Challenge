@@ -92,26 +92,7 @@ Build a GNN that can navigate the noise and make accurate predictions by:
 1. **Learning when to trust** individual node features
 2. **Learning when to trust** neighborhood aggregation
 3. **Build** robust GNNs can detect anomalies or corrupted signals — similar to spotting a misbehaving cell in a tumor.
-## Evaluation Metrics
-Your submissions will be evaluated on the test set using the overall classification correctness 
 
-## 🏆 Winning Criteria
-The winner will be determined by the submission that achieves the best classification accuracy .
-Check the leaderboard to see other's rankings : https://noormajdoub.github.io/Challenge/ ✨✨
-###  Submission Process
-
-1. Fork this repository
-2. Add your predictions: `submissions/submission_<username>.csv`  (create the submissions folder and put your csv file in it)
-3. Create Pull Request:
-   *Base : Main
-   
-   *Name Submission: <your_username>
-   
-   *Compare: your fork/branch with the submission file
-4. Merge 
-5. Leaderboard updated within 24 hours :https://noormajdoub.github.io/Challenge/ 
-
-Good luck, and may the best aggregation strategy win! 
 ## Resources
 
 Convex Adversarial Collective Classification ;MohamadAli Torkamani, Daniel Lowd Proceedings of the 30th International Conference on Machine Learning, PMLR 28(1):642-650, 2013.
