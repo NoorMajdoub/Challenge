@@ -1,4 +1,4 @@
-# ✨ GNN Challenge: Liar Nodes✨
+# ✨ GNN Challenge: Liar Node✨
 
 ##  The Problem
 
